@@ -1,0 +1,389 @@
+/* 
+Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
+- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
+- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%) */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: hsl(0, 0%, 98%);
+}
+.nav-container{
+    background: hsl(0, 0%, 100%) ;
+    box-shadow: 0 0 10px rgba(71, 70, 70, 0.5);
+    padding: 15px 100px 15px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+}
+.mode-menu{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-image img{
+    width: 18px;
+    
+}
+.nav-container h1{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.mode-menu h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.country-search-select{
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 0 10px rgba(71, 70, 70, 0.5);
+    border-radius: 10px;
+    padding: 17px 10px;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.country-search-select .bx-search{
+    font-size: 20px;
+    padding-left: 20px;
+}
+.country-search-select input{
+   padding-left: 20px;
+   outline: none;
+    border: none;
+}
+.country-search-select input{
+    outline: none;
+    border: none;
+}
+.country-container{
+    /* background: red; */
+}
+.country-overall-container{
+    padding-top:140px;
+    /* display: none; */
+    position: relative;
+}
+
+.selected{
+    display: none;    
+}
+
+.country-cont{
+    display: flex;
+    padding: 0px 130px 0px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+select{
+    /* position: relative; */
+    outline: 0;
+    border: 0;
+    padding: 20px 20px;
+    width: 220px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 1.1rem;
+    background-position: right 10px center;
+    border-radius:10px ;
+    box-shadow: 0 0 10px rgba(71, 70, 70, 0.5);
+    background-image: url(./chevron-down-regular-24.png);
+    background-repeat: no-repeat;
+    background-position: 180px 18px;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+select::-ms-expand{
+    display: none;
+}
+.select-cont{
+    position: relative;
+}
+/* .bx-down-arrow-alt{
+    position: absolute;
+    right: 9%;
+    top: 17%;
+    font-size: 30px;
+    text-align: center;
+} */
+.select-container option{
+    width:100% !important;
+    margin-top:15px !important;
+    padding: 20px  !important;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    outline: none;
+    border: 0;
+}
+
+.country-card{
+    height: 100%;
+    max-width: 320px;
+    width: 100%;
+    /* background: #fff; */
+    padding-bottom: 10px;
+    margin-bottom:0px ;
+    box-shadow: 0 0 10px rgba(71, 70, 70, 0.5);
+    border-radius: 10px;
+}
+
+.country-container{
+    margin: 80px 130px 80px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Adjust min and max width as needed */
+    gap: 60px; 
+    /* display: none; */
+}
+.black{
+    background-color: #111;
+}
+
+.content{
+    padding: 20px 20px ;
+}
+.content h2{
+    padding-bottom: 20px;
+}
+.content p{
+    line-height: 30px;
+}
+.content span{
+    font-weight: bold;
+}
+.images img{
+    width: 100%;
+    height: 220px;
+}
+.dark-mode {
+    display: none;
+    
+}
+.dark-mode svg{
+    width: 32px;
+    height: 32px;
+}
+.card-container .button-cont{
+    width: 150px;
+    padding: 12px 35px;
+    box-shadow: 0 0 10px rgba(71, 70, 70, 0.5);
+    border-radius: 8px;
+    font-size: 1rem;
+   
+    
+}
+.button-cont button{
+    background-color: transparent !important;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+.card-container{
+    padding: 180px 130px 80px;
+    display: none;
+}
+.card-each-cont{
+    margin: 50px 0px 40px;
+}
+.country-card-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+}
+.country-card-cont .images img{
+    width: 450px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(71, 70, 70, 0.5);
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    gap:120px;
+    align-items: center;
+}
+.content-cont{
+    display: flex;
+    /* align-items: center; */
+    flex-direction:column ;
+    gap: 50px;
+}
+.cont-1, .cont-2 p, .border-cont p{
+    font-size: 1rem;
+}
+.con-1, .cont-2 h2{
+    font-size: 1.3rem;
+}
+
+@media (max-width: 1380px) {
+    .country-card-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+@media (max-width: 1200px) {
+    .country-container {
+        grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Adjust the number of columns and min/max width as needed */
+        margin: 40px 20px; /* Adjust margin for smaller screens */
+    }
+    .country-card-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .cont{
+        display: flex;
+        justify-content: center;
+        gap:20px;
+        align-items: center;
+    }
+    .card-container{
+        padding: 180px 60px 80px;
+    }
+    .country-card-cont .images img{
+        width: 350px;
+        height: 300px;
+        box-shadow: 0 0 10px rgba(71, 70, 70, 0.5);
+    }
+}
+
+@media (max-width: 868px) {
+    .country-container {
+        grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Adjust the number of columns and min/max width as needed */
+        margin: 80px 30px; /* Adjust margin for smaller screens */
+    }
+    .country-cont{
+        display: flex;
+        padding: 0px 10px 0px;
+        /* justify-content: space-between; */
+        gap: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    .nav-container{
+        padding: 15px 30px 15px;
+    }
+    .nav-container h1{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .country-search-select{
+        max-width:350px;
+        width: 100%;
+    }
+    .country-card-cont{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:center;
+        gap: 40px;
+    }
+    .cont{
+        display: flex;
+        justify-content: center;
+        gap:40px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .content-cont{
+        display: flex;
+        /* align-items: center; */
+        flex-direction:column ;
+        gap: 50px;
+    }
+    .card-container{
+        padding: 180px 10px 80px;
+        display: none;
+    }
+    .country-card-cont .images img{
+        width: 450px;
+        /* width: 100%; */
+        height: 400px;
+        /* height: 100%; */
+        box-shadow: 0 0 10px rgba(71, 70, 70, 0.5);
+    }
+}
+@media (max-width: 430px) {
+    .country-container {
+        grid-template-columns: repeat(1, minmax(200px, 1fr)); /* Adjust the number of columns and min/max width as needed */
+        padding: 70px auto; /* Adjust margin for smaller screens */
+        align-items: center;
+        margin: 80px 30px;
+    }
+    .country-cont{
+        display: flex;
+        padding: 0px 10px 0px;
+        /* justify-content: space-between; */
+        gap: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    .nav-container{
+        padding: 15px 10px 15px;
+    }
+    .nav-container h1{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .country-search-select{
+        max-width:350px;
+        width: 100%;
+    }
+    .country-card-cont{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .cont{
+        display: flex;
+        justify-content: center;
+        gap:40px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .content-cont{
+        display: flex;
+        /* align-items: center; */
+        flex-direction:column ;
+        gap: 50px;
+    }
+    .card-container{
+        padding: 180px 10px 80px;
+        display: none;
+    }
+    .country-card-cont .images img{
+        max-width: 450px;
+        width: 100%;
+        max-height: 400px;
+        height: 100%;
+        box-shadow: 0 0 10px rgba(71, 70, 70, 0.5);
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries api </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="nav-container">
+                <h1>Where in the world?</h1>
+                <div class="mode-menu">
+                    <div class="nav-image light-mode">
+                        <img src="./light-mode-10979.png" class="light-mode">
+                    </div>
+                    <div class="dark-mode">
+                        <svg width="64px" height="64px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                            
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                            <g id="SVGRepo_iconCarrier"> <g clip-path="url(#a)" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"> <path d="M5 12H1M23 12h-4M7.05 7.05 4.222 4.222M19.778 19.778 16.95 16.95M7.05 16.95l-2.828 2.828M19.778 4.222 16.95 7.05" stroke-linecap="round"/> <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" fill="#000000" fill-opacity=".16"/> <path d="M12 19v4M12 1v4" stroke-linecap="round"/> </g> <defs> <clipPath id="a"> <path fill="#ffffff" d="M0 0h24v24H0z"/> </clipPath> </defs> </g>
+                            
+                        </svg>
+                    </div>
+                    <h3 class="mode-text">
+                        Dark Mode
+                    </h3>
+                </div>
+            </div>
+            
+        </div>
+        <div class="country-overall-container">
+           <div class="country-cont">
+                <div class="country-search-select">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search for a country"></input>
+                </div>
+                <div class="select-cont">
+                    <!-- <i class='bx bx-down-arrow-alt'></i> -->
+                    <select name="" id="continent-select" class="select-container">
+                        <option selected class="selected" value ="all">Filter by Region</option>
+                        <option class="select" value="Africa">Africa</option>
+                        <option class="select" value="America">America</option>
+                        <option class="select" value="Asia">Asia</option>
+                        <option  class="select" value="Europe">Europe</option>
+                        <option class="select" value="Oceania">Oceania</option>
+                    </select>
+                </div>
+           </div>
+        </div>
+        <div class="country-container">
+
+        </div>
+        <div class="card-container">
+            <div class="button-cont">
+                <i class='bx bx-arrow-back'></i>
+                <button> Back</button>
+            </div>
+            <div class="card-each-cont">
+                
+            </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
